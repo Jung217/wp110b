@@ -1,4 +1,4 @@
-function filter(lb,hb){
+function filter357(lb,hb){
     let ans=[], a=0;
     for(lb ; lb<=hb ; lb++)
     {
@@ -14,4 +14,4 @@ function filter(lb,hb){
     }
     return ans;
 }
-console.log(filter(5,15))
+console.log(filter357(5,15))
