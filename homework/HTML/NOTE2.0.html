@@ -18,11 +18,28 @@
                 border-style:solid dotted dashed double;
                 padding: 10px;
             }
+            .float{
+                float: right
+            }
+            .ulli{
+                padding: 3px;
+            }
         </style>
     </head>
     <body>
         <h1 style="text-align: center; font-size: 40px;">簡志融的Css筆記</h1>
         <div> 
+            <h2>Css基礎概念</h2>
+            <ol>
+                <li>越裡面的Css style，優先度越高
+                    <p>&lt;div style="color:red"&gt;</p>
+                    <p>&emsp;&emsp;&lt;h1 style="color:blue"&gt;Hello Css !!&lt;h1&gt;</p>
+                    <p>&lt;/div&gt;</p><p>則h1為藍色</p>
+                </li>
+                <li>Css不能獨自存在，必搭配Html</li>
+                <li>Css是網頁不可分割的一部分</li>
+            </ol>
+            <hr/>
             <h2>Css寫法</h2>
             <ul>
                 <li><b>另外寫.css檔</b></li>
@@ -45,150 +62,41 @@
             <p class="border">可分別不同樣式 border-style:solid dotted dashed double; (自上順時鐘)</p>
             <hr/>
             <h2>Padding(內距) & Margin(外距)</h2>
-            <p><b>Padding為border內的距離(X px, X >= 0)</b></p>
-            <p><b>Margin為border外的距離(X px, X 可為負值, 會重疊)</b></p>
-            <p>padding or margin: X px</p>
-            <p>padding or margin-top: X px</p>
-            <p>padding or margin-right: X px</p>
-            <p>padding or margin-bottom: X px</p>
-            <p>padding or margin-left: X px</p>
-            <p>padding or margin: X px X px X px X px (自上順時鐘)</p>
-            <hr/>
-            <h2>head & body</h2>
-            <p>&lt;head&gt;</p>
-            <p>HTML tags、meta標籤</p>
-            <p>&lt;/head&gt;</p>
-            <p>&lt;body&gt;</p>
-            <p>網頁內容</p>
-            <p>&lt;/body&gt;</p>
-            <hr/>
-            <h2>容器</h2><!--容器-->
-            <p>&lt;div&gt;</p>
-            <p>區塊容器(排版)</p>
-            <p>&lt;/div&gt;</p>
-            <p>&lt;span&gt;行內容器(美工)&lt;/span&gt;</p>
-            <hr/>
-            <h2>meta系列(matadata)</h2><!--meta標籤-->
-            <p><b>編碼</b> &lt;meta charset="UTF-8"/&gt; </p>
-            <p><b>作者</b> &lt;meta name="author" content="作者"/&gt; </p>
-            <p><b>關鍵字</b> &lt;meta name="keyword" content="關鍵字"/&gt; </p>
-            <p><b>網頁內容</b> &lt;meta name="description" content="網頁內容"/&gt; </p>
-            <p><b>視口(自動調整大小)</b> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; </p>
-            <hr/>
-            <h2>網頁標籤</h2><!--網頁標籤-->
-            <p>&lt;title&gt;標籤內容&lt;/title&gt; </p>
-            <hr/>
-            <h2>各式大小標題</h2><!--各式大小標題-->
-            <p>&lt;h1&gt;你的標題(大)&lt;/h1&gt; ---- &lt;h6&gt;你的標題(小)&lt;/h6&gt;</p>
-            <h1>第一種標題</h1> 
-            <h2>第二種標題</h2>
-            <h3>第三種標題</h3>
-            <h4>第四種標題</h4>
-            <h5>第五種標題</h5>
-            <h6>第六種標題</h6>
-            <hr/>
-            <h2>換行&水平線</h2><!--換行&水平線-->
-            <p><b>換行</b>  &lt;br&gt;&lt;/br&gt; 簡化成 &lt;br/&gt;</p>
-            <p><b>水平線</b>  &lt;hr&gt;&lt;/hr&gt; 簡化成 &gt;&lt;hr/&gt;</p>
-            <hr/>
-            <h2>文字段落</h2><!--文字段落-->
-            <p>&lt;p&gt;文字段落(占整行)&lt;/p&gt;</p>
-            <a>&lt;a&gt;文字段落(多常長多少)&lt;/a&gt;</a>
-            <hr/>
-            <h2>文字變化</h2><!--粗體斜體-->
-            <p>&lt;i&gt;<i>斜體</i>&lt;/i&gt;</p>
-            <p>&lt;b&gt;<b>粗體</b>&lt;/b&gt;</p>
-            <p>&lt;i&gt;<i>斜體&lt;b&gt;<b>粗體</b>&lt;/b&gt;</i>&lt;/i&gt;</p>
-            <hr/>
-            <h2>連結</h2><!--連結-->
-            <p>&lt;a href="連結"&gt;顯示在頁面的樣子&lt;/a&gt;</p>
-            <p>&lt;a href="<a href="https://www.flickr.com/photos/cjc217">https://www.flickr.com/photos/cjc217</a>"&gt;志融的Flickr&lt;/a&gt;</p>
-            <p><a href="https://www.flickr.com/photos/cjc217">志融的Flickr</a></p>
-            <hr/>
-            <h2>圖片</h2><!--圖片-->
-            <p>&lt;img src="圖片連結/位置/名稱"/&gt;</p>
-            <img src="https://live.staticflickr.com/65535/52054157046_54e16d3955_h.jpg" width="400"/>
-            <p>(攝於2022.05.06 By 簡志融)</p>
-            <hr/>
-            <h2>影片播放器</h2><!--影片播放器-->
-            <p>&lt;video src="影片連結/位置/名稱"/&gt;錯誤時顯示&lt;/video&gt;</p>    
-            <video src="https://www.youtube.com/2dde9e70-93e3-46e5-96d0-d7459b2c946d" controls width="400" height="225">Wrong</video>
-            <br/>
-            <p>&lt;iframe src="影片連結"/&gt;錯誤時顯示&lt;/video&gt; (用來內嵌外部內容)</p>
-            <iframe width="400" height="225" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <hr/>
-            <h2>表格</h2><!--表格-->
-            <p>&lt;table&gt;</p>
-            <p>&emsp;&emsp;&lt;tr&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;語言</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;功能</p>
-            <p>&emsp;&emsp;&lt;/tr&gt;</p>
-            <p>&emsp;&emsp;&lt;tr&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;Html</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;骨架 架構</p>
-            <p>&emsp;&emsp;&lt;/tr&gt;</p>
-            <p>&emsp;&emsp;&lt;tr&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;Css</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;排版 美工</p>
-            <p>&emsp;&emsp;&lt;/tr&gt;</p>
-            <p>&emsp;&emsp;&lt;tr&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;JS</p>
-            <p>&emsp;&emsp;&emsp;&lt;td&gt;動畫 功能</p>
-            <p>&emsp;&emsp;&lt;/tr&gt;</p>
-            <p>&lt;/table&gt;</p>
-            <table >
-                <tr>
-                <td>語言
-                <td>功能
-                </tr>
-                <tr>
-                <td>Html
-                <td>骨架 架構
-                </tr>
-                <tr>
-                <td>Css
-                <td>排版 美工
-                </tr>
-                <tr>
-                <td>JS
-                <td>動畫 功能
-                </tr>
-            </table>
-            <hr/>
-            <h2>列表</h2><!--列表-->
-            <p>&lt;ul&gt;</p>
-            <p>&emsp;&emsp;&lt;li&gt;Html&lt;/li&gt;</p>
-            <p>&emsp;&emsp;&lt;li&gt;Css&lt;/li&gt;</p>
-            <p>&emsp;&emsp;&lt;li&gt;JS&lt;/li&gt;</p>
-            <p>&lt;/ul&gt;</p>
+            <p>Padding為border內的距離(X px, X >= 0)</p>
+            <p>Margin為border外的距離(X px, X 可為負值, 會重疊)</p>
             <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Js</li>
+                <li class="ulli">padding or margin: X px</li>
+                <li class="ulli">padding or margin-top: X px</li>
+                <li class="ulli">padding or margin-right: X px</li>
+                <li class="ulli">padding or margin-bottom: X px</li>
+                <li class="ulli">padding or margin-left: X px</li>
+                <li class="ulli">padding or margin: X px X px X px X px (自上順時鐘)</li>
             </ul>
             <hr/>
-            <h2>input系列</h2><!--input系列-->
-            <p>&lt;input type="種類" placeholder="說明文字"/&gt;&emsp;種類 : text、password、date、checkbox、flie</p>
-            <p><input type="text" placeholder="text"/></p>
-            <p><input type="password" placeholder="password"/></p>
-            <p><input type="date"/></p>
-            <p><input type="checkbox"/>I understand this</p>
+            <h2>Display(顯示)</h2>
+            <p>display可改變容器顯示性質</p>
+            <p>如&lt;p style="display:inline"&gt;便會使得p從原本占一行，變成有多少占多少</p>
+            <p>如&lt;span style="display:block"&gt;便會使得span從原本有多少占多少，變成占一行</p>
             <hr/>
-            <h2>textarea</h2><!--textarea-->
-            <p>&lt;textarea&gt;預設文字&lt;/textarea&gt;</p>
-            <textarea>可以輸入文字喔!!</textarea>
+            <h2>Float(懸浮)</h2>
+            <img class="float" src="https://live.staticflickr.com/65535/52054157046_54e16d3955_h.jpg" height="200"/>
+            <p>float猶如word的版功能，可使文字排在圖片左方或右方</p>
+            <p>&lt;img style="float: right;" src="圖片連結/位置/名稱"/&gt;</p>
+            <p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p>
             <hr/>
-            <h2>網頁基礎架構</h2><!--網頁基礎架構-->
-            <p>&lt;html&gt;</p>
-                <p>&emsp;&emsp;&lt;head&gt;</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"/&gt;</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&lt;title>網頁標題&lt;/title&gt;</p>          
-                <p>&emsp;&emsp;&lt;/head&gt;</p>
-                <p>&emsp;&emsp;&lt;body&gt;</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&lt;h1>這是第一種標題&lt;/h1>&gt;</p>  
-                <p>&emsp;&emsp;&emsp;&emsp; &lt;p>文字段落&lt;/p&gt;</p> 
-                <p>&emsp;&emsp;&lt;/body&gt;</p>
-            <p>&lt;/html&gt;</p>&emsp;
+            <h2></h2>
+            <hr/>
+            <h2></h2>
+            <hr/>
+            <h2></h2>
+            <hr/>
+            <h2></h2>
+            <hr/>
+            <h2></h2>
+            <hr/>
+            <h2></h2>
+            <hr/>
+            <h2></h2>
             <hr/>
             <h2>其他筆記</h2>
             <p><a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE1.0.html">Html</a>、<a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE3.0.html">Js</a></p>
