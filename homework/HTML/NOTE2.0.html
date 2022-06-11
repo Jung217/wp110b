@@ -8,44 +8,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Css筆記 111010501簡志融</title>
         <style>
-            div
-            {
+            div{
                 border: 3px darkblue solid;
                 border-radius: 30px;
                 padding:15px 10px;
+            }
+            .border{
+                width: 470px;
+                border-style:solid dotted dashed double;
+                padding: 10px;
             }
         </style>
     </head>
     <body>
         <h1 style="text-align: center; font-size: 40px;">簡志融的Css筆記</h1>
         <div> 
-            <h2>網頁語言介紹</h2>
-            <table style="width: 200px;">
-                <tr>
-                <td>語言
-                <td>功能
-                </tr>
-                <tr>
-                <td>Html
-                <td>骨架 架構
-                </tr>
-                <tr>
-                <td>Css
-                <td>排版 美工
-                </tr>
-                <tr>
-                <td>JS
-                <td>動畫 功能
-                </tr>
-            </table>
+            <h2>Css寫法</h2>
+            <ul>
+                <li><b>另外寫.css檔</b></li>
+                <li><b>寫在&lt;head&gt;裡</b><p>&lt;head&gt;</p><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;div{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p><p>&lt;/head&gt;</p></li>
+                <li><b>寫在 Html tag 後面加 style="Css"</b><p>&lt;body style="Css"&gt;</p><p>&lt;div style="Css"&gt;</p><p>&lt;h1 style="Css"&gt;</p><p>以此類推......</p></li>
+            </ul>
             <hr/>
-            <h2>Html文件類型</h2><!--Html-->
-            <p>&lt;!DOCTYPE html&gt;</p>
+            <h2>Color(顏色)</h2>
+            <ul>
+                <li><b>顏色名稱表示</b><p>color:darkblue</p></li>
+                <li><b>RGB表示</b><p>color:rgb(0(R\紅色), 0(綠色), 139(藍色))</p></li>
+                <li><b>Hsl表示</b><p>color:hsl(240(色相), 100%(飽和度), 27.3%(亮度))</p></li>
+                <li><b>色碼表示</b><p>color:#00008B</p></li>
+            </ul>
+            <p>延伸有border-color、background-color......</p>
             <hr/>
-            <h2>註解</h2><!--註解-->
-            <p>&lt;!--要註解的東西--&gt;</p>
+            <h2>Border(邊界)</h2>
+            <p>border: X px(寬度) solid(樣式) darkblue(顏色)</p>
+            <p>樣式:solid(實線), dashed(虛線), double(雙線), dotted(點)......</p>
+            <p class="border">可分別不同樣式 border-style:solid dotted dashed double; (自上順時鐘)</p>
             <hr/>
-            <h2>head & body</h2><!--head & body-->
+            <h2>Padding(內距) & Margin(外距)</h2>
+            <p><b>Padding為border內的距離(X px, X >= 0)</b></p>
+            <p><b>Margin為border外的距離(X px, X 可為負值, 會重疊)</b></p>
+            <p>padding or margin: X px</p>
+            <p>padding or margin-top: X px</p>
+            <p>padding or margin-right: X px</p>
+            <p>padding or margin-bottom: X px</p>
+            <p>padding or margin-left: X px</p>
+            <p>padding or margin: X px X px X px X px (自上順時鐘)</p>
+            <hr/>
+            <h2>head & body</h2>
             <p>&lt;head&gt;</p>
             <p>HTML tags、meta標籤</p>
             <p>&lt;/head&gt;</p>
@@ -180,7 +189,10 @@
                 <p>&emsp;&emsp;&emsp;&emsp; &lt;p>文字段落&lt;/p&gt;</p> 
                 <p>&emsp;&emsp;&lt;/body&gt;</p>
             <p>&lt;/html&gt;</p>&emsp;
+            <hr/>
+            <h2>其他筆記</h2>
+            <p><a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE1.0.html">Html</a>、<a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE3.0.html">Js</a></p>
         </div>
-        <p style="text-align: center;">本網誌為自行編寫，<a href="https://github.com/Jung217/wp110b/wiki/HTML">參考資料</a>掛在Github中</p>
+        <p style="text-align: center;">本網誌為自行編寫，<a href="https://github.com/Jung217/wp110b/wiki/CSS">參考資料</a>掛在Github中</p>
     </body>
 </html>
