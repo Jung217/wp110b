@@ -29,6 +29,46 @@
                 bottom: 30px;
                 right: 30px;
             }
+            @keyframes animation {
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+            @keyframes anforh2 {
+                0%{color: crimson;}
+                16%{color: orange;}
+                33%{color: yellow}
+                48%{color: green;}
+                67%{color:blue}
+                83%{color: darkblue}
+                100%{color:purple}
+            }
+            @keyframes anforph {
+                10%{border-radius: 4px;}
+                20%{border-radius: 8px;}
+                30%{border-radius: 12px;}
+                40%{border-radius: 16px;}
+                50%{border-radius: 20px;}
+                60%{border-radius: 24px;}
+                70%{border-radius: 28px;}
+                80%{border-radius: 32px;}
+                90%{border-radius: 36px;}
+                100%{border-radius: 40px;}
+            }
+            .anph:hover{
+                animation-name: animation;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+            .anh2{
+                animation-name: anforh2;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            .anph1{
+                animation-name: anforph;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
         </style>
     </head>
     <body>
@@ -141,8 +181,62 @@
             <p>如&lt;span style="display:block;"&gt;便會使得span從原本有多少占多少，變成占一行</p>
             <hr/>
             <h2>Flex(佈局)</h2>
+            <p>排版好幫手，但有點難度，較難上手</p>
+            <p>&lt;style&gt;</p>
+            <p>&emsp;&emsp;.classname{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;display:flex;(要先宣告才能使用)</p>
+            <p>&emsp;&emsp;&emsp;&emsp;flex:主軸方向;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;flex-wrap:換行與否;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;justify-content:主軸內容調整;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;align-items:錯軸內容調整;</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&emsp;&emsp;.flex-1{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;flex: 1;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;order: -1;</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&emsp;&emsp;.flex-2{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;flex: 2;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;order: 0;</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&emsp;&emsp;.flex-3{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;flex: 1;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;order: 1;</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&lt;/style&gt;</p>
+            <ul>
+                <li><p><b>主軸方向(預設column)</b></p><p>column(上到下)、column-reverse(下到上)、row(右到左)、row-reverse(左到右)</p></li>
+                <li><p><b>換行與否</b></p><p>nowrap(換行)、wrap(不換行)、wrap-reverse(主軸反向換行)</p></li>
+                <li><p><b>主軸內容調整</b></p><p>center(置中)、flex-start(對齊起始)、flex-end(對其尾端)、space-between(在區塊間平分空白)、space-around(在所有間隙平分空白)</p></li>
+                <li><p><b>錯軸內容調整</b></p><p>center(置中)、flex-start(對齊起始)、flex-end(對其尾端)、baseline(基準線調整)、stretch(延伸)</p></li>
+                <li><p><b>flex</b></p><p>依照總數分配占比;如flex-1的flex=1，所以佔四分之一的大小</p></li>
+                <li><p><b>order</b></p><p>依照數字大小排序，負數也可以</p></li>
+            </ul>
             <hr/>
-            <h2>Animation(動畫)</h2>
+            <h2 class="anh2" >Animation(動畫)</h2>
+            <p>&lt;style&gt;</p>
+            <p>&emsp;&emsp;@keyframes 名稱{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;from{Css0}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;to{Css1}</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&emsp;&emsp;@keyframes 名稱1{</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;0%{Css0}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;20%{Css1}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;40%{Css2}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;60%{Css3}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;80%{Css4}</p>
+            <p>&emsp;&emsp;&emsp;&emsp;100%{Css5}</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&emsp;&emsp;.classname(:hover){</p> 
+            <p>&emsp;&emsp;&emsp;&emsp;animation-name: 名稱;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;animation-duration: 1.5s(時長);</p>
+            <p>&emsp;&emsp;&emsp;&emsp;animation-iteration-count: 次數 或 infinite(無限);</p>
+            <p>&emsp;&emsp;&emsp;&emsp;animation-delay: Xs(網頁載入X秒後執行;非必要);</p>
+            <p>&emsp;&emsp;}</p>
+            <p>&lt;/style&gt;</p>
+            <p>上述二種keyframes皆可</p>
+            <p>加上:hover可使動畫在滑鼠放上時呈現</p>
+            <p>(請把滑鼠放到右邊圖片上)</p>
+            <p><img class="anph1" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"><img class="anph" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></p>
             <hr/>
             <h2>其他筆記</h2>
             <p><a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE1.0.html">Html</a>、<a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE3.0.html">Js</a></p>
