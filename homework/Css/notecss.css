@@ -1,0 +1,18 @@
+#html{
+    border: 3px darkred solid;
+    border-radius: 30px;
+    padding:15px 10px;
+}
+
+
+#css{
+    border: 3px darkblue solid;
+    border-radius: 30px;
+    padding:15px 10px;
+}
+
+#js{
+    border: 3px rgb(209, 180, 60) solid;
+    border-radius: 30px;
+    padding:15px 10px;
+}
