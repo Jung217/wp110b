@@ -24,11 +24,17 @@
             .ulli{
                 padding: 3px;
             }
+            #mp{
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+            }
         </style>
     </head>
     <body>
         <h1 style="text-align: center; font-size: 40px;">簡志融的Css筆記</h1>
         <div> 
+            <img id="mp" style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">
             <h2>Css基礎概念</h2>
             <ol>
                 <li>越裡面的Css style，優先度越高
@@ -46,6 +52,10 @@
                 <li><b>寫在&lt;head&gt;裡</b><p>&lt;head&gt;</p><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;div{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p><p>&lt;/head&gt;</p></li>
                 <li><b>寫在 Html tag 後面加 style="Css"</b><p>&lt;body style="Css"&gt;</p><p>&lt;div style="Css"&gt;</p><p>&lt;h1 style="Css"&gt;</p><p>以此類推......</p></li>
             </ul>
+            <hr/>
+            <h2>引入外部Css</h2>
+            <p>如果另外寫.css檔，便須要自外部引入Css檔案</p>
+            <p>&lt;link href="檔名.css/檔案連結" rel="stylesheet"/&gt;</p>
             <hr/>
             <h2>Class(類別)</h2>
             <p>&lt;... class="類別名稱 類別名稱1"&gt;</p>
@@ -67,7 +77,7 @@
             <h2>Color(顏色)</h2>
             <ul>
                 <li><b>顏色名稱表示</b><p>color:darkblue</p></li>
-                <li><b>RGB表示</b><p>color:rgb(0(R\紅色), 0(綠色), 139(藍色))</p></li>
+                <li><b>RGB表示</b><p>color:rgb(0(紅色), 0(綠色), 139(藍色))</p></li>
                 <li><b>Hsl表示</b><p>color:hsl(240(色相), 100%(飽和度), 27.3%(亮度))</p></li>
                 <li><b>色碼表示</b><p>color:#00008B</p></li>
             </ul>
@@ -91,17 +101,20 @@
             </ul>
             <hr/>
             <h2>Display(顯示)</h2>
-            <p>display可改變容器顯示性質</p>
-            <p>如&lt;p style="display:inline"&gt;便會使得p從原本占一行，變成有多少占多少</p>
-            <p>如&lt;span style="display:block"&gt;便會使得span從原本有多少占多少，變成占一行</p>
+            <p>display可改變顯示性質</p>
+            <p>如&lt;p style="display:inline;"&gt;便會使得p從原本占一行，變成有多少占多少</p>
+            <p>如&lt;span style="display:block;"&gt;便會使得span從原本有多少占多少，變成占一行</p>
             <hr/>
             <h2>Float(懸浮)</h2>
             <img class="float" src="https://live.staticflickr.com/65535/52054157046_54e16d3955_h.jpg" height="200"/>
-            <p>float猶如word的版功能，可使文字排在圖片左方或右方</p>
+            <p>float猶如word的版功能，可使文字排在圖片左方或右方;列表也可使用</p>
             <p>&lt;img style="float: right;" src="圖片連結/位置/名稱"/&gt;</p>
             <p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p>
             <hr/>
-            <h2></h2>
+            <h2>Position(位置)</h2>
+            <ul>
+                <li><p><b>固定在畫面上</b></p><p>&lt;div style="position:fixed;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right可調整離邊緣的距離</p></li>
+            </ul>
             <hr/>
             <h2></h2>
             <hr/>
