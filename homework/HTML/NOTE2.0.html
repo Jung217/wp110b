@@ -74,15 +74,6 @@
                 <li><p><b>id</b><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;#id{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p></li>
             </ul>
             <hr/>
-            <h2>Color(顏色)</h2>
-            <ul>
-                <li><b>顏色名稱表示</b><p>color:darkblue</p></li>
-                <li><b>RGB表示</b><p>color:rgb(0(紅色), 0(綠色), 139(藍色))</p></li>
-                <li><b>Hsl表示</b><p>color:hsl(240(色相), 100%(飽和度), 27.3%(亮度))</p></li>
-                <li><b>色碼表示</b><p>color:#00008B</p></li>
-            </ul>
-            <p>延伸有border-color、background-color......</p>
-            <hr/>
             <h2>Border(邊界)</h2>
             <p>border: X px(寬度) solid(樣式) darkblue(顏色)</p>
             <p>樣式:solid(實線), dashed(虛線), double(雙線), dotted(點)......</p>
@@ -100,10 +91,41 @@
                 <li class="ulli">padding or margin: X px X px X px X px (自上順時鐘)</li>
             </ul>
             <hr/>
-            <h2>Display(顯示)</h2>
-            <p>display可改變顯示性質</p>
-            <p>如&lt;p style="display:inline;"&gt;便會使得p從原本占一行，變成有多少占多少</p>
-            <p>如&lt;span style="display:block;"&gt;便會使得span從原本有多少占多少，變成占一行</p>
+            <h2>Position(位置)</h2>
+            <ul>
+                <li><p><b>固定在畫面上(捲動位置不變)</b></p><p>&lt;div style="position:fixed;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right可調整離邊緣的距離</p></li>
+                <li><p><b>固定在相對位置上(加上後方才有變化)</b></p><p>&lt;div style="position:relative;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right才可調整離原本位置的距離</p></li>
+                <li><p><b>固定在絕對位置上(類似於第一 + 第二)</b></p><p>區塊如第一種獨立一層，調整如第二種</p><p>&lt;div style="position:absolute;"&gt;</p><p>&lt;div style="position:absolute; top:X px"&gt;</p><p>加top、bottom、left、right才可調整離原本位置的距離</p></li>
+            </ul>
+            <hr/>
+            <h2>Text(文字)</h2>
+            <ul>
+                <li><p><b>文字位置</b></p><p>&lt;... style="text-align: center;"&gt;</p><p>可放center、left、right</p></li>
+                <li><p><b>各行等寬</b></p><p>&lt;... style="text-indent: X px;"&gt;</p><p>可使段落文字開頭空格</p></li>
+                <li><p><b>段落前空</b></p><p>&lt;... style="text-align: justify;"&gt;</p><p>可使段落文字每行等寬</p></li>
+                <li><p><b>行距</b></p><p>&lt;... style="line-height: X;"&gt;</p><p>可調整段落行距</p></li>
+                <li><p style="text-decoration: overline;"><b>頂線&底線&劃掉</b></p><p style="text-decoration: underline">&lt;... style="text-decoration: underline;"&gt;</p><p>可放overline、underline、line-through(三者可同時)</p></li>
+                <li><p><b>文字陰影</b></p><p style="text-shadow: 2px 2px 5px red;">&lt;... style="text-shadow: 2px 2px 5px red;"&gt;</p><p>text-shadow: 水平px 垂直2px 模糊px red;</p></li>
+
+            </ul>
+            <hr/>
+            <h2>Color(顏色)</h2>
+            <ul>
+                <li><b>顏色名稱表示</b><p>color:darkblue</p></li>
+                <li><b>RGB表示</b><p>color:rgb(0(紅色), 0(綠色), 139(藍色))</p></li>
+                <li><b>Hsl表示</b><p>color:hsl(240(色相), 100%(飽和度), 27.3%(亮度))</p></li>
+                <li><b>色碼表示</b><p>color:#00008B</p></li>
+            </ul>
+            <p>延伸有border-color、background-color......</p>
+            <hr/>
+            <h2>border-radius(邊界半徑)</h2>
+            <p>將border的角設成半徑X的圓，方形圖片or區塊的邊長/2=X => 圓形</p>
+            <p>&lt;... style="border-radius: X px;" &gt;&emsp;或 Y% </p>
+            <p>或 Ipx Jpx Kpx Lpx，表從左上順時鐘的四個角 </p>
+            <p><img src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="border-radius: 10px 20px 30px 40px;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="border-radius: 40px;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></p>
+            <hr/>
+            <h2>Opacity(透明度)</h2>
+            
             <hr/>
             <h2>Float(懸浮)</h2>
             <img class="float" src="https://live.staticflickr.com/65535/52054157046_54e16d3955_h.jpg" height="200"/>
@@ -111,16 +133,10 @@
             <p>&lt;img style="float: right;" src="圖片連結/位置/名稱"/&gt;</p>
             <p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p>
             <hr/>
-            <h2>Position(位置)</h2>
-            <ul>
-                <li><p><b>固定在畫面上</b></p><p>&lt;div style="position:fixed;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right可調整離邊緣的距離</p></li>
-            </ul>
-            <hr/>
-            <h2></h2>
-            <hr/>
-            <h2></h2>
-            <hr/>
-            <h2></h2>
+            <h2>Display(顯示)</h2>
+            <p>display可改變顯示性質</p>
+            <p>如&lt;p style="display:inline;"&gt;便會使得p從原本占一行，變成有多少占多少</p>
+            <p>如&lt;span style="display:block;"&gt;便會使得span從原本有多少占多少，變成占一行</p>
             <hr/>
             <h2></h2>
             <hr/>
