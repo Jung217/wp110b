@@ -201,6 +201,18 @@
             <p>除了click，還有change、mouseover......</p>
             <p>詳細請參閱<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3School/DOM Events</a></p>
             <hr/>
+            <h2>正規表達式(regular expression)</h2>
+            <p>let re1 = /[0-9]/&emsp;基礎正規表達式在兩個/之間建立</p>
+            <p>let re2 = /[0-9]+/&emsp;+ 代表需連續出現</p>
+            <p>let re3 = /[0-9]+/g&emsp;g 代表全域比對</p>
+            <p>let re4 = /:([0-9a-zA-Z])+/g&emsp;: 代表比對的前面要有冒號 ; +  在外面代表分開比對各個條件</p>
+            <p>let re5 = /:([0-9a-zA-Z]+)/g&emsp;: 代表比對的前面要有冒號 ; +  在裡面代表連續比對各個條件</p>
+            <p>let re6 = /:\w+/&emsp;\w 包含數字字母與底線，等同於[0-9a-zA-Z_ ]</p>
+            <p>let re7 = /:\d+/&emsp;\d 只含數字，寫法等同於 [0-9]</p>
+            <p>let re8 = /:\D+/g&emsp;\D 非數字，寫法等同於 [^0-9]</p>
+            <p>let re9 = /\w+@[\w\.]+/g&emsp;可用來比對email</p>
+            <p>用 text.match(re) 選擇要比對的正規表達式</p>
+            <hr/>
             <h2>其他筆記</h2>
             <p><a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE1.0.html">Html</a>、<a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE2.0.html">Css</a></p>
         </div>
