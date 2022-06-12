@@ -53,13 +53,157 @@
             <p>例 : 1name(X)、$name(O)</p>
             <hr/>
             <h2>字串使用</h2>
+            <p>var stringname = "hello Js"</p>
+            <ul>
+                <li><p><b>.length</b></p><p>stringname.length = 8</p></li>
+                <li><p><b>.toUppercase()</b></p><p>stringname.toUppercase() = HELLO JS</p></li>
+                <li><p><b>.toLowercase()</b></p><p>stringname.toLowercase() = hello js</p></li>
+                <li><p><b>.charAt(數字)</b></p><p>stringname.charAt(4) = o (取第n個字元，第一個為0)</p></li>
+                <li><p><b>.indexof(字元)</b></p><p>stringname.indexof(l) = 2 (比對找出位置，重複取前者)</p></li>
+                <li><p><b>.substring(i,j)</b></p><p>stringname.substring(0, 5) = hello (取i到j的字元，不含j)</p></li>
+            </ul>
             <hr/>
             <h2>數字使用</h2>
+            <p>Js中，程式本身有先乘除後加減的概念，括號內也會先運算</p>
+            <ul>
+                <li><p><b>.abs(數)</b></p><p>Math.abs(-1) = 1 (絕對值)</p></li>
+                <li><p><b>.max(數, 數1)</b></p><p>Math.max(4, 5) = 5 (最大值)</p></li>
+                <li><p><b>.min(數, 數1)</b></p><p>Math.min(4, 5) = 4 (最小值)</p></li>
+                <li><p><b>.round(數)</b></p><p>Math.round(7.6) = 8 (四捨五入)</p></li>
+                <li><p><b>.pow(數, 次方)</b></p><p>Math.pow(5, 2) = 25 (平方)</p></li>
+                <li><p><b>.sprt(數)</b></p><p>Math.sprt(4) = 2 (開根號)</p></li>
+                <li><p><b>.random()</b></p><p>Math.random() = 0.547569781339 (隨機產生0到1的數)</p><p>Math.round(Math.random()*10) 這樣便可產生0到10的隨機數</p></li>
+            </ul>
             <hr/>
+            <h2>陣列</h2>
+            <ul>
+                <li><p><b>一般陣列</b></p><p>var arrayname = [] | [0, 1, 2] | ["a", "b", "c"];</p></li>
+                <li><p><b>多資料型態陣列</b></p><p>var arrayname = ["ccj", 19, "nqu"];</p></li>
+                <li><p><b>二維陣列</b></p><p>var arrayname = [</p>&emsp;&emsp;[0, 1, 2],<p>&emsp;&emsp;["ccj", 19, "nqu"]</p><p>];</p></li>
+            </ul>
+            <hr/>
+            <h2>If</h2>
+            <p>如同其他程式語言的if</p>
+            <p>if(條件){</p>
+            <p>&emsp;指令 ;</p>
+            <p>&emsp;指令-1 ;</p>
+            <p>}</p>
+            <hr/>
+            <h2>Whlie</h2>
+            <p>如同其他程式語言的while</p>
+            <p>while(條件){</p>
+                <p>&emsp;指令 ;</p>
+                <p>&emsp;指令-1 ;</p>
+                <p>}</p>
+            <p>或者是先執行再來檢查條件</p>
+            <p>do{</p>
+                <p>&emsp;指令 ;</p>
+                <p>&emsp;指令-1 ;</p>
+                <p>}while(條件)</p>
+            <hr/>
+            <h2>For</h2>
+            <p>如同其他程式語言的for</p>
+            <p>for(i = 0 ; i &lt; j ; i++){</p>
+                <p>&emsp;指令 ;</p>
+                <p>&emsp;指令-1 ;</p>
+                <p>}</p>
+            <p>也有巢狀迴圈，適合用來處理二維陣列</p>
+            <p>for(i = 0 ; i &lt; j ; i++){</p>
+                <p>&emsp;for(k = 0 ; k &lt; l ; k++){</p>
+                    <p>&emsp;&emsp;指令-3 ;</p>
+                    <p>&emsp;&emsp;指令-4 ;</p>
+                    <p>&emsp;}</p>
+                <p>&emsp;指令-1 ;</p>
+                <p>}</p>
+            <hr/>
+            <h2>函式</h2>
+            <p>使用函式可以預先寫好程式碼，需要時呼叫即可</p>
+            <p>function fnname(傳入的值){</p>
+                <p>&emsp;&emsp;指令 ;</p>
+                <p>&emsp;&emsp;指令-1 ;</p>
+                <p>&emsp;&emsp;return 回傳的值 ;</p>
+                <p>}</p>
+                <p>不一定需要傳入的值，依需求決定</p>
+            <hr/>
+            <h2>Object物件</h2>
+            <p>Js本身便是物件導向的程式語言，物件由鍵(key)和值(value)組成</p>
+            <p>以下提供物件的基礎寫法</p>
+            <p>var objectname{</p>
+                <p>&emsp;&emsp;name:"ccj" ;</p>
+                <p>&emsp;&emsp;age:19 ;</p>
+                <p>&emsp;&emsp;school:"nqu" ;</p>
+                <p>}</p>
+                <p>物件下，也可以寫陣列跟函氏</p>
+                <p>var objectname{</p>
+                    <p>&emsp;&emsp;student:[</p>
+                    <p>&emsp;&emsp;&emsp;{</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;name:"ccj",</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;age:19,</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;school:"nqu"</p>
+                    <p>&emsp;&emsp;&emsp;},</p>
+                    <p>&emsp;&emsp;&emsp;{</p>
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;name:"ccy",</p>
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;age:22,</p>
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;school:"nqu"</p>
+                        <p>&emsp;&emsp;&emsp;}</p>
+                        <p>&emsp;&emsp;]</p>
+                    <p>&emsp;&emsp;fnname:function{</p>
+                        <p>&emsp;&emsp;console.log("Hello" + this.student[0].name) ;</p>
+                        <p>&emsp;&emsp;}</p>
+                    <p>}</p>
+            <hr/>
+            <h2>Class模板</h2>
+            <p>可撰寫class模板，方便新增相同類型物件</p>
+            <p>class Classname{</p>
+                <p>&emsp;&emsp;constructor(name, age, gender){</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;this.name = name ;</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;this.age = age ;</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;this.gender = gender ;</p>
+                <p>&emsp;&emsp;}</p>
+                <p>}</p>
+                <p>var student1 = new Classname('ccj', 19, 'male')</p>
+            <hr/>
+            <h2>Document.write</h2>
+            <p>可在畫面上直接增加文字</p>
+            <p>或在HTML文件裡增加HTML元素</p>
+            <p>document.write("Hello World!");</p>
+            <p>document.write("&lt;p&gt;Have a nice day!&lt;/p&gt;");</p>
+            <hr/>
+            <h2>Document.getElementById</h2>
+            <p>getElementById、getElementByClassName、getElementByTagName</p><p>透過不同的標籤來取得元素，用於調整或改變元素的樣式</p>
+            <p>const myElement = document.getElementById("idname");</p>
+            <p>myElement.href = <a href="https://github.com/ccccourse/wp110b">"https://github.com/ccccourse/wp110b"</a>;</p>
+            <p>myElement.innerText = "Hi";</p>
+            <p>myElement.style.color = "red";</p>
+            <hr/>
+            <h2>Console.log</h2>
+            <p>console是控制台，log是紀錄，就是把log顯示在console上</p>
+            <ul>
+                <li><p><b>印出布林</b><p>let age = 18</p><p>console.log(age > 20) ==> false</p></li>
+                <li><p><b>印出變數</b><p>let age = 18</p><p>console.log(age) ==> 18</p></li>
+                <li><p><b>印出字串</b></p><p>let age = '18'</p><p>console.log(age) ==> 18</p></li>
+                <li><p><b>印出字串+變數</b></p><p>let age = '18'</p><p>console.log('age=', age) ==> age= 18</p><p>console.log('age='+ age) ==> age=18</p></li>
+                <li><p><b>加號要注意，若將字串和變數相加，就會自動轉換成全部都字串</b></p><p>let age = 18</p><p>let age1 = '22'</p><p>console.log(age + age1) ==> 1822</p></li>
+            </ul>
+            <hr/>
+            <h2>Prompt</h2>
+            <p>可用於彈窗給使用者輸入資訊</p>
+            <p>var input = prompt(說明文字)</p>
+            <p>輸入值預設為字串，可透過parseInt和parseFloat轉換成需要的數字型態</p>
+            <hr/>
+            <h2>Event listener(事件監聽)</h2>
+            <p>用於監聽網頁任何的風吹草動，不論是按鈕或是滑鼠的動作都能監聽</p>
+            <ul>
+                <li><p><b>寫在Html tag中</b><p>&lt;button id="btn" onclick="fnname(this)"&gt;Click&lt;/button&gt;</p><p>&lt;script&gt;</p><p>&emsp;&emsp;function fnname(element){</p><p>&emsp;&emsp;&emsp;&emsp;element.innerText="Clicked";</p><p>&emsp;&emsp;}</p><p>&lt;/script&gt;</p><p>按鈕被按下時呼叫fnname函式並回傳元素</p><p>如果想對被監聽的元素進行調整，就要加this</p><p>寫在Html tag中，前面加on(原本為click)</p></li>
+                <li><p><b>寫在.js檔中</b><p>var btn = document.getElementById("btn")</p><p>btn.addEventlistener(click, fnname(){</p><p>&emsp;&emsp;this.innerText="Clicked";</p><p>})</p></li>
+            </ul>
+            <p>上述兩種同樣動作不同寫法</p>
+            <p>除了click，還有change、mouseover......</p>
+            <p>詳細請參閱<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3School/DOM Events</a></p>
             <hr/>
             <h2>其他筆記</h2>
             <p><a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE1.0.html">Html</a>、<a style="font-size: 25px;" href="https://jung217.github.io/wp110b//homework/HTML/NOTE2.0.html">Css</a></p>
         </div>
-        <p style="text-align: center;">本網誌為自行編寫，<a href="https://github.com/Jung217/wp110b/wiki/CSS">參考資料</a>掛在Github中</p>
+        <p style="text-align: center;">本網誌為自行編寫，<a href="https://github.com/Jung217/wp110b/wiki/JS">參考資料</a>掛在Github中</p>
     </body>
 </html>
