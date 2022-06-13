@@ -24,24 +24,25 @@
         <h1 style="text-align: center; font-size: 40px;">簡志融的Js筆記</h1>
         <div> 
             <a href="https://jung217.github.io/wp110b/homework/HTML/mev2.html"><img id="mp" style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></a>
-            <h2>Js寫法</h2>
+            <p>主題 : <a href="#js">Js寫法</a>&emsp;<a href="#js2">外部Js</a>&emsp;<a href="#dt">資料型態</a>&emsp;<a href="#vl">變數</a>&emsp;<a href="#str">字串</a>&emsp;<a href="#mau">數字</a>&emsp;<a href="#ary">陣列</a>&emsp;<a href="#if">If</a>&emsp;<a href="#while">While</a>&emsp;<a href="#for">For</a>&emsp;<a href="#fn">函式</a>&emsp;<a href="#ob">物件</a>&emsp;<a href="#clss">Class模板</a>&emsp;<a href="#dw">Document.write</a>&emsp;<a href="#dg">Document.getElementById</a>&emsp;<a href="#cg">Console.log</a>&emsp;<a href="#po">Prompt</a>&emsp;<a href="#el">Event listener</a>&emsp;<a href="#re">正規表達式</a>&emsp;<a href="#on">其他筆記</a></p>
+            <h2 id="js">Js寫法</h2>
             <ul>
                 <li><b>另外寫.js檔</b></li>
                 <li><b>寫在&lt;body&gt;裡</b><p>&lt;body&gt;</p><p>&emsp;&emsp;&lt;script&gt;</p><p>&emsp;&emsp;&emsp;&emsp;var firstjs = "Hello Js !!"</p><p>&emsp;&emsp;&emsp;&emsp;document.write(firstjs)</p><p>&emsp;&emsp;&lt;/script&gt;</p><p>&lt;/body&gt;</p></li>
             </ul>
             <hr/>
-            <h2>引入外部Js</h2>
+            <h2 id="js2">引入外部Js</h2>
             <p>如果另外寫.js檔，便須要自外部引入Js檔案</p>
             <p>&lt;script src="檔名.js/檔案連結"&gt;&lt;/script&gt;</p>
             <hr/>
-            <h2>基本資料型態</h2>
+            <h2 id="dt">基本資料型態</h2>
             <ul>
                 <li><p><b>字串</b></p><p>"字串內容"、'字串內容'&emsp;(兩種皆可)</p></li>
                 <li><p><b>數字</b></p><p>1、3、5、7&emsp;(就是數字)</p></li>
                 <li><p><b>布林</b></p><p>true、false</p></li>
             </ul>
             <hr/>
-            <h2>變數</h2>
+            <h2 id="vl">變數</h2>
             <p>var 變數名稱 = 任一種資料型態</p>
             <p>let 變數名稱 = 任一種資料型態</p>
             <p>var 是函數變數，在函數生存範圍都可以存取；let 則是區塊變數，只能在宣告後使用，宣告前使用則會報錯。</p>
@@ -52,7 +53,7 @@
             </ul>
             <p>例 : 1name(X)、$name(O)</p>
             <hr/>
-            <h2>字串使用</h2>
+            <h2 id="str">字串使用</h2>
             <p>var stringname = "hello Js"</p>
             <ul>
                 <li><p><b>.length</b></p><p>stringname.length = 8</p></li>
@@ -63,7 +64,7 @@
                 <li><p><b>.substring(i,j)</b></p><p>stringname.substring(0, 5) = hello (取i到j的字元，不含j)</p></li>
             </ul>
             <hr/>
-            <h2>數字使用</h2>
+            <h2 id="mau">數字使用</h2>
             <p>Js中，程式本身有先乘除後加減的概念，括號內也會先運算</p>
             <ul>
                 <li><p><b>.abs(數)</b></p><p>Math.abs(-1) = 1 (絕對值)</p></li>
@@ -75,21 +76,21 @@
                 <li><p><b>.random()</b></p><p>Math.random() = 0.547569781339 (隨機產生0到1的數)</p><p>Math.round(Math.random()*10) 這樣便可產生0到10的隨機數</p></li>
             </ul>
             <hr/>
-            <h2>陣列</h2>
+            <h2 id="ary">陣列</h2>
             <ul>
                 <li><p><b>一般陣列</b></p><p>var arrayname = [] | [0, 1, 2] | ["a", "b", "c"];</p></li>
                 <li><p><b>多資料型態陣列</b></p><p>var arrayname = ["ccj", 19, "nqu"];</p></li>
                 <li><p><b>二維陣列</b></p><p>var arrayname = [</p>&emsp;&emsp;[0, 1, 2],<p>&emsp;&emsp;["ccj", 19, "nqu"]</p><p>];</p></li>
             </ul>
             <hr/>
-            <h2>If</h2>
+            <h2 id="if">If</h2>
             <p>如同其他程式語言的if</p>
             <p>if(條件){</p>
             <p>&emsp;指令 ;</p>
             <p>&emsp;指令-1 ;</p>
             <p>}</p>
             <hr/>
-            <h2>Whlie</h2>
+            <h2 id="while">Whlie</h2>
             <p>如同其他程式語言的while</p>
             <p>while(條件){</p>
                 <p>&emsp;指令 ;</p>
@@ -101,7 +102,7 @@
                 <p>&emsp;指令-1 ;</p>
                 <p>}while(條件)</p>
             <hr/>
-            <h2>For</h2>
+            <h2 id="for">For</h2>
             <p>如同其他程式語言的for</p>
             <p>for(i = 0 ; i &lt; j ; i++){</p>
                 <p>&emsp;指令 ;</p>
@@ -116,7 +117,7 @@
                 <p>&emsp;指令-1 ;</p>
                 <p>}</p>
             <hr/>
-            <h2>函式</h2>
+            <h2 id="fn">函式</h2>
             <p>使用函式可以預先寫好程式碼，需要時呼叫即可</p>
             <p>function fnname(傳入的值){</p>
                 <p>&emsp;&emsp;指令 ;</p>
@@ -125,7 +126,7 @@
                 <p>}</p>
                 <p>不一定需要傳入的值，依需求決定</p>
             <hr/>
-            <h2>Object物件</h2>
+            <h2 id="ob">Object物件</h2>
             <p>Js本身便是物件導向的程式語言，物件由鍵(key)和值(value)組成</p>
             <p>以下提供物件的基礎寫法</p>
             <p>var objectname{</p>
@@ -152,7 +153,7 @@
                         <p>&emsp;&emsp;}</p>
                     <p>}</p>
             <hr/>
-            <h2>Class模板</h2>
+            <h2 id="clss">Class模板</h2>
             <p>可撰寫class模板，方便新增相同類型物件</p>
             <p>class Classname{</p>
                 <p>&emsp;&emsp;constructor(name, age, gender){</p>
@@ -163,20 +164,20 @@
                 <p>}</p>
                 <p>var student1 = new Classname('ccj', 19, 'male')</p>
             <hr/>
-            <h2>Document.write</h2>
+            <h2 id="dw">Document.write</h2>
             <p>可在畫面上直接增加文字</p>
             <p>或在HTML文件裡增加HTML元素</p>
             <p>document.write("Hello World!");</p>
             <p>document.write("&lt;p&gt;Have a nice day!&lt;/p&gt;");</p>
             <hr/>
-            <h2>Document.getElementById</h2>
+            <h2 id="dg">Document.getElementById</h2>
             <p>getElementById、getElementByClassName、getElementByTagName</p><p>透過不同的標籤來取得元素，用於調整或改變元素的樣式</p>
             <p>const myElement = document.getElementById("idname");</p>
             <p>myElement.href = <a href="https://github.com/ccccourse/wp110b">"https://github.com/ccccourse/wp110b"</a>;</p>
             <p>myElement.innerText = "Hi";</p>
             <p>myElement.style.color = "red";</p>
             <hr/>
-            <h2>Console.log</h2>
+            <h2 id="cg">Console.log</h2>
             <p>console是控制台，log是紀錄，就是把log顯示在console上</p>
             <ul>
                 <li><p><b>印出布林</b><p>let age = 18</p><p>console.log(age > 20) ==> false</p></li>
@@ -186,12 +187,12 @@
                 <li><p><b>加號要注意，若將字串和變數相加，就會自動轉換成全部都字串</b></p><p>let age = 18</p><p>let age1 = '22'</p><p>console.log(age + age1) ==> 1822</p></li>
             </ul>
             <hr/>
-            <h2>Prompt</h2>
+            <h2 id="po">Prompt</h2>
             <p>可用於彈窗給使用者輸入資訊</p>
             <p>var input = prompt(說明文字)</p>
             <p>輸入值預設為字串，可透過parseInt和parseFloat轉換成需要的數字型態</p>
             <hr/>
-            <h2>Event listener(事件監聽)</h2>
+            <h2 id="el">Event listener(事件監聽)</h2>
             <p>用於監聽網頁任何的風吹草動，不論是按鈕或是滑鼠的動作都能監聽</p>
             <ul>
                 <li><p><b>寫在Html tag中</b><p>&lt;button id="btn" onclick="fnname(this)"&gt;Click&lt;/button&gt;</p><p>&lt;script&gt;</p><p>&emsp;&emsp;function fnname(element){</p><p>&emsp;&emsp;&emsp;&emsp;element.innerText="Clicked";</p><p>&emsp;&emsp;}</p><p>&lt;/script&gt;</p><p>按鈕被按下時呼叫fnname函式並回傳元素</p><p>如果想對被監聽的元素進行調整，就要加this</p><p>寫在Html tag中，前面加on(原本為click)</p></li>
@@ -201,7 +202,7 @@
             <p>除了click，還有change、mouseover......</p>
             <p>詳細請參閱<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3School/DOM Events</a></p>
             <hr/>
-            <h2>正規表達式(regular expression)</h2>
+            <h2 id="re">正規表達式(regular expression)</h2>
             <p>let re1 = /[0-9]/&emsp;基礎正規表達式在兩個/之間建立</p>
             <p>let re2 = /[0-9]+/&emsp;+ 代表需連續出現</p>
             <p>let re3 = /[0-9]+/g&emsp;g 代表全域比對</p>
