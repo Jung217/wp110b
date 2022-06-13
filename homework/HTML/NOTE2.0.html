@@ -75,7 +75,8 @@
         <h1 style="text-align: center; font-size: 40px;">簡志融的Css筆記</h1>
         <div> 
             <a href="https://jung217.github.io/wp110b/homework/HTML/mev2.html"><img id="mp" style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></a>
-            <h2>Css基礎概念</h2>
+            <p>主題 : <a href="#css">Css基礎概念</a>&emsp;<a href="#css1">Css寫法</a>&emsp;<a href="#css2">外部Css</a>&emsp;<a href="#cls">Class</a>&emsp;<a href="#id">Id</a>&emsp;<a href="#cse">選擇器</a>&emsp;<a href="#bor">邊界</a>&emsp;<a href="#pama">內距&外距</a>&emsp;<a href="#pos">位置</a>&emsp;<a href="#txt1">文字</a>&emsp;<a href="#color">顏色</a>&emsp;<a href="#br">邊界半徑</a>&emsp;<a href="#opa">透明度</a>&emsp;<a href="#fla">懸浮</a>&emsp;<a href="#dis">顯示</a>&emsp;<a href="#fle">佈局</a>&emsp;<a href="#an">動畫</a>&emsp;<a href="#on">其他筆記</a></p>
+            <h2 id="css">Css基礎概念</h2>
             <ol>
                 <li>越裡面的Css style，優先度越高
                     <p>&lt;div style="color:red"&gt;</p>
@@ -86,26 +87,26 @@
                 <li>Css是網頁不可分割的一部分</li>
             </ol>
             <hr/>
-            <h2>Css寫法</h2>
+            <h2 id="css1">Css寫法</h2>
             <ul>
                 <li><b>另外寫.css檔</b></li>
                 <li><b>寫在&lt;head&gt;裡</b><p>&lt;head&gt;</p><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;div{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p><p>&lt;/head&gt;</p></li>
                 <li><b>寫在 Html tag 後面加 style="Css"</b><p>&lt;body style="Css"&gt;</p><p>&lt;div style="Css"&gt;</p><p>&lt;h1 style="Css"&gt;</p><p>以此類推......</p></li>
             </ul>
             <hr/>
-            <h2>引入外部Css</h2>
+            <h2 id="css2">引入外部Css</h2>
             <p>如果另外寫.css檔，便須要自外部引入Css檔案</p>
             <p>&lt;link href="檔名.css/檔案連結" rel="stylesheet"/&gt;</p>
             <hr/>
-            <h2>Class(類別)</h2>
+            <h2 id="cls">Class(類別)</h2>
             <p>&lt;... class="類別名稱 類別名稱1"&gt;</p>
             <p>每個html tag可有多個class標籤，以空格相隔</p>
             <hr/>
-            <h2>Id(唯一識別名稱)</h2>
+            <h2 id="id">Id(唯一識別名稱)</h2>
             <p>&lt;... id="識別名稱"&gt;</p>
             <p>在整個網頁中，一個id只能給一個html tag，獨一無二</p>
             <hr/>
-            <h2>Css selector(選擇器)</h2>
+            <h2 id="cse">Css selector(選擇器)</h2>
             <p>可挑選有特定class、id或html tag套用Css</p>
             <ul>
                 <li><p><b>certain html tags</b></p><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;div{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p></li>
@@ -114,12 +115,12 @@
                 <li><p><b>id</b><p>&emsp;&emsp;&lt;style&gt;</p><p>&emsp;&emsp;&emsp;&emsp;#id{</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Css</p><p>&emsp;&emsp;&emsp;&emsp;}</p><p>&emsp;&emsp;&lt;/style&gt;</p></li>
             </ul>
             <hr/>
-            <h2>Border(邊界)</h2>
+            <h2 id="bor">Border(邊界)</h2>
             <p>border: X px(寬度) solid(樣式) darkblue(顏色)</p>
             <p>樣式:solid(實線), dashed(虛線), double(雙線), dotted(點)......</p>
             <p class="border">可分別不同樣式 border-style:solid dotted dashed double; (自上順時鐘)</p>
             <hr/>
-            <h2>Padding(內距) & Margin(外距)</h2>
+            <h2 id="pama">Padding(內距) & Margin(外距)</h2>
             <p>Padding為border內的距離(X px, X >= 0)</p>
             <p>Margin為border外的距離(X px, X 可為負值, 會重疊)</p>
             <ul>
@@ -131,14 +132,14 @@
                 <li class="ulli">padding or margin: X px X px X px X px (自上順時鐘)</li>
             </ul>
             <hr/>
-            <h2>Position(位置)</h2>
+            <h2 id="pos">Position(位置)</h2>
             <ul>
                 <li><p><b>固定在畫面上(捲動位置不變)</b></p><p>&lt;div style="position:fixed;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right可調整離邊緣的距離</p></li>
                 <li><p><b>固定在相對位置上(加上後方才有變化)</b></p><p>&lt;div style="position:relative;"&gt;</p><p>&lt;div style="position:fixed; top:X px"&gt;</p><p>加top、bottom、left、right才可調整離原本位置的距離</p></li>
                 <li><p><b>固定在絕對位置上(類似於第一 + 第二)</b></p><p>區塊如第一種獨立一層，調整如第二種</p><p>&lt;div style="position:absolute;"&gt;</p><p>&lt;div style="position:absolute; top:X px"&gt;</p><p>加top、bottom、left、right才可調整離原本位置的距離</p></li>
             </ul>
             <hr/>
-            <h2>Text(文字)</h2>
+            <h2 id="txt1">Text(文字)</h2>
             <ul>
                 <li><p><b>文字位置</b></p><p>&lt;... style="text-align: center;"&gt;</p><p>可放center、left、right</p></li>
                 <li><p><b>各行等寬</b></p><p>&lt;... style="text-indent: X px;"&gt;</p><p>可使段落文字開頭空格</p></li>
@@ -149,7 +150,7 @@
 
             </ul>
             <hr/>
-            <h2>Color(顏色)</h2>
+            <h2 id="color">Color(顏色)</h2>
             <ul>
                 <li><b>顏色名稱表示</b><p>color:darkblue</p></li>
                 <li><b>RGB表示</b><p>color:rgb(0(紅色), 0(綠色), 139(藍色))</p></li>
@@ -158,29 +159,29 @@
             </ul>
             <p>延伸有border-color、background-color......</p>
             <hr/>
-            <h2>border-radius(邊界半徑)</h2>
+            <h2 id="br">border-radius(邊界半徑)</h2>
             <p>將border的角設成半徑X的圓，方形圖片or區塊的邊長/2=X => 圓形</p>
             <p>&lt;... style="border-radius: X px;" &gt;&emsp;或 Y% </p>
             <p>或 Ipx Jpx Kpx Lpx，表從左上順時鐘的四個角 </p>
             <p><img src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="border-radius: 10%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="border-radius: 10px 20px 30px 40px;" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="border-radius: 40px;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></p>
             <hr/>
-            <h2>Opacity(透明度)</h2>
+            <h2 id="opa">Opacity(透明度)</h2>
             <p>&lt;... style="opacity: X;" &gt;&emsp;X = 0 ~ 1 </p>
             <p>以下分別為0.25、0.5、0.75、1</p>
             <p><img style="opacity: 0.25;" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="opacity: 0.5; border-radius: 10%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="opacity: 0.75;border-radius: 10px 20px 30px 40px;" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">&emsp;<img style="opacity: 1;border-radius: 40px;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80"></p>
             <hr/>
-            <h2>Float(懸浮)</h2>
+            <h2 id="fla">Float(懸浮)</h2>
             <img class="float" src="https://live.staticflickr.com/65535/52054157046_54e16d3955_h.jpg" height="200"/>
             <p>float猶如word的版功能，可使文字排在圖片左方或右方;列表也可使用</p>
             <p>&lt;img style="float: right;" src="圖片連結/位置/名稱"/&gt;</p>
             <p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p>
             <hr/>
-            <h2>Display(顯示)</h2>
+            <h2 id="dis">Display(顯示)</h2>
             <p>display可改變顯示性質</p>
             <p>如&lt;p style="display:inline;"&gt;便會使得p從原本占一行，變成有多少占多少</p>
             <p>如&lt;span style="display:block;"&gt;便會使得span從原本有多少占多少，變成占一行</p>
             <hr/>
-            <h2>Flex(佈局)</h2>
+            <h2 id="fle">Flex(佈局)</h2>
             <p>排版好幫手，但有點難度，較難上手</p>
             <p>&lt;style&gt;</p>
             <p>&emsp;&emsp;.classname{</p> 
@@ -212,7 +213,7 @@
                 <li><p><b>order</b></p><p>依照數字大小排序，負數也可以</p></li>
             </ul>
             <hr/>
-            <h2 class="anh2" >Animation(動畫)</h2>
+            <h2 id="an" class="anh2" >Animation(動畫)</h2>
             <p>&lt;style&gt;</p>
             <p>&emsp;&emsp;@keyframes 名稱{</p> 
             <p>&emsp;&emsp;&emsp;&emsp;from{Css0}</p>
