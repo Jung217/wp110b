@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"/>
+         <meta name="author" content="簡志融"/>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">                             
+         <title>登入頁面</title>   
+    </haed>  
+    <body style="background-color: white; text-align: center;">
+        <style>
+            div
+            {
+                text-align:center;
+                border: 3px lightslategray solid;
+                border-radius: 30px;
+                padding:15px 10px;
+            }
+        </style>
+        <div class="flex">
+            <h1>Sign in</h1>
+            <hr/>
+            <p><input id="txt" type="text"placeholder="Your Email"/></p>
+            <p><input id="pas" type="password"placeholder="Password"/></p>
+            <p><input type="checkbox"/>I agree all statements in <a href="*">Terms of service</a></p>
+            <button onclick="check()" style="color: green;">Sumbit</button>
+        </div>
+        <script>
+            function check(email,psaaword){
+                let che = 0, che1=0;
+                email = document.getElementById("txt").textContent;
+                psaaword = document.getElementById("pas").value;
+                let re = /\w+@[\w\.]+/g;
+                let text = email
+                if(text.match(re) != "") che++;
+                if(psaaword != "") che1++;
+                if(che>0 || che1>0) 
+                {
+                    window.location.href="https://jung217.github.io/wp110b/project/main.html";
+                    alert("登入成功!!");
+                }   
+                else if(che==0 || che1==0) alert("請輸入Email & Password");  
+                else if(che==0) alert("請輸入Email");
+                else if(che1==0) alert("請輸入Password");
+            }  
+        </script>
+    </body>
+  </head>
+</html>
