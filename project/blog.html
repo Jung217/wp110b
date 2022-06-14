@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"/>
+         <meta name="author" content="簡志融"/>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">                             
+         <title>心情留言板</title>
+         <style>
+            body{
+                background-color: rgb(117, 121, 71);
+            }
+            #h1{
+                color: white;                
+                text-align: center ;
+                border: 3px solid white;
+                border-radius: 30px;
+            }
+            .article{
+                color:white;
+            }
+            p{
+                color:white;
+            }
+            #btn{
+                width: 300px;
+                background-color: cornflowerblue;
+                color: white;
+                border-color: rgb(117, 121, 71);
+                border-radius: 10px;
+            }
+            @keyframes anforh1 {
+                0%{color: crimson;}
+                16%{color: orange;}
+                33%{color: yellow}
+                48%{color: green;}
+                67%{color:blue}
+                83%{color: darkblue}
+                100%{color:purple}
+            }
+            .h1h{
+                animation-name: anforh1;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+         </style>
+    </haed>  
+    <body>
+         <h1 class="h1h" id="h1">心情留言板</h1>
+         <br/>
+         <div id="list">
+            <div class="article">
+                <h2>論親子</h2>
+                <p>或許世上最麻煩的身份就是父母
+                    在關係未消亡前
+                    雙方便是彼此互相約束
+                    如同魚水一般
+                    水對魚完全的給予
+                    魚對水完全的依賴</p>
+            </div>
+            <hr/>
+            <div class="article">
+                <h2>論思念</h2>
+                <p>有人問說想念怎麼辦
+                    他可能在遙遠的彼方
+                    或者是在天的那一方
+                    我說哭吧 
+                    但又不是 或許該說流淚
+                    默默的 安靜的
+                    思念便自己流淌而出 
+                    爾後又隨著時間乾涸了</p>
+            </div>
+            <hr/>
+            <div class="article">
+                <h2>Hate莊子</h2>
+                <p>人的一生或許毫無意義
+                    如同逍遙遊中的漆樹般
+                    既然能夠如此無用
+                    但正因這樣才能不被砍伐
+                    每個人的存在皆可謂是機率上的奇蹟
+                    人生如果耍廢什麼都不做
+                    那不如像漆樹一樣
+                    被栽種無何有之鄉 廣莫之野
+                    豈不悠哉 遊哉 逍遙自在</p>
+            </div>
+         </div>
+         <hr/>
+         <br/>
+         <br/>
+         <div >
+            <p>標題</p>
+            <input style="width: 300px;" id="til" type="text"/>
+            <p>內容</p>
+            <textarea style="width: 300px;" id="cot" rows="10"></textarea>
+            <p><button onclick="sub()" id="btn">發布</button></p>
+        </div>
+        <script>
+            var title = document.getElementById("til")
+            var content = document.getElementById("cot")
+            var list = document.getElementById("list")
+
+            function sub(){
+                list.innerHTML = list.innerHTML+ `
+                <div class="article">
+                    <hr/>
+                    <h2>${title.value}</h2>
+                    <p>${content.value}</p>
+                </div>
+                `;
+                title.value = null;
+                content.value = null;
+            }
+        </script>
+    </body>
+  </head>
+</html>
+  
