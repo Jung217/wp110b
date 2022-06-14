@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"/>
+         <meta name="author" content="簡志融"/>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">                             
+         <title>志融的簡介</title>
+         <style>
+            body{
+                text-align: center;
+                color: white;
+                background-color: rgb(117, 121, 71);
+            }
+            .hh1{
+                text-shadow: 2px 2px 5px black;
+            }
+            .navbar {
+                border-radius: 30px 30px 0px 0px;
+                overflow: hidden;
+                background-color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                cursor: pointer;
+                font-size: 16px;    
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+            
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+            .show {
+                display: block;
+            }
+         </style>
+    </haed>  
+    <body>
+        <div class="navbar">
+            <a style="font-size: 25px;" href="#home">Home</a>
+            <a style="font-size: 25px;" href="#news">Comment</a>
+            <div class="dropdown">
+              <button style="font-size: 25px;" class="dropbtn" onmouseover="toggleDropdown()" onmouseout="toggleDropdown()" >Note
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div onmouseout="toggleDropdown()" class="dropdown-content" id="myDropdown">
+                    <a href="https://jung217.github.io/wp110b/homework/HTML/NOTE1.0.html">Html</a>
+                    <a href="https://jung217.github.io/wp110b/homework/HTML/NOTE2.0.html">Css</a>
+                    <a href="https://jung217.github.io/wp110b/homework/HTML/NOTE3.0.html">Js</a>
+                    <a href="https://github.com/Jung217/wp110b/wiki">Github wiki</a>
+                </div>
+            </div> 
+            <a style="float: right;" href=""><img style="width: 25px;" src="https://www.ngc.org.tw/images/all/user.png"/></a>
+          </div>
+         <div style=" border-radius: 0px 0px 30px 30px; height: 300px; background-size:cover; background-position: center;background-image: url(https://live.staticflickr.com/65535/52054157046_a1701c3386_b.jpg);">
+         </br>
+             <h1 id="home" class="hh1" style="font-size: 50px;">簡志融的個人首頁</h1>
+         </div>
+         <hr/>
+         <div>
+            <img style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="200">
+        </br>
+            <b style="font-size: 45px;">簡志融</b>
+            <h3>2003.02.17 水瓶座-男性</h3>
+            <h3>s111010501@student.nqu.edu.tw</h3>
+        <hr/>
+             <table style="width:100%;">
+                 <tr>
+                    <td><b style="font-size: 35px;">興趣</b></td>
+                    <td><b style="font-size: 35px;">程式語言</b></td>
+                    <td><b style="font-size: 35px;">學歷</b></td>
+                 </tr>
+                 <tr>
+                    <td><b>攝影</b></td>
+                    <td><b>C</b></td>
+                    <td><b>萬里國小</b></td>
+                 </tr>
+                 <tr>
+                    <td><b>陶藝</b></td>
+                    <td><b>C#</b></td>
+                    <td><b>武崙國中</b></td>
+                </tr>  
+                <tr>
+                    <td><b>旅行</b></td>
+                    <td><b>Css</b></td>
+                    <td><b>南湖高中</b></td>
+                </tr>
+                <tr>
+                    <td><b>烹飪</b></td>
+                    <td><b>Html</b></td>
+                    <td><b>金門大學</b></td>
+                </tr>
+             </table>   
+         </div> 
+        </br>
+         <div style="text-align: center;">
+            <b style="color: white;">外部連結 : </b>
+            <a style="color: white;" href="https://www.facebook.com/WLDGSBKT/">Facebook</a>
+            <a style="color: white;" href="https://www.flickr.com/photos/cjc217">Flickr</a>
+            <a style="color: white;" href="https://www.instagram.com/chih_jung_chien/">instagram</a>
+         </div>
+         <script>
+            function toggleDropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+        </script>
+    </body>
+  </head>
+</html>
+  
