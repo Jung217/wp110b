@@ -48,7 +48,7 @@
             }
 
             .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-                background-color: red;
+                background-color: lightslategray;
             }
 
             .dropdown-content {
@@ -72,7 +72,7 @@
             .dropdown-content a:hover {
                 background-color: #ddd;
             }
-            
+
             .dropdown:hover .dropdown-content {
             display: block;
             }
@@ -80,12 +80,54 @@
             .show {
                 display: block;
             }
+            .flex{
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .f1{
+                flex: 1;
+                order: 1;
+            }
+            .f2{
+                flex: 2;
+                order: 2;
+            }
+            .f3{
+                flex: 3;
+                order: 3;
+            }
+            .f4{
+                flex: 4;
+                order: 4;
+            }
+            .f5{
+                flex: 5;
+                order: 5;
+            }
+            .f6{
+                flex: 6;
+                order: 6;
+            }
+            .f7{
+                flex: 7;
+                order: 7;
+            }
+            .f8{
+                flex: 8;
+                order: 8;
+            }
+            .f9{
+                flex: 9;
+                order: 9;
+            }
          </style>
     </haed>  
     <body>
         <div class="navbar">
             <a style="font-size: 25px;" href="#home">Home</a>
-            <a style="font-size: 25px;" href="#news">Comment</a>
+            <a style="font-size: 25px;" href="https://jung217.github.io/wp110b/project/blog.html">Comment</a>
+            <a style="font-size: 25px;" href="#Photos">Photos</a>
             <div class="dropdown">
               <button style="font-size: 25px;" class="dropbtn" onmouseover="toggleDropdown()" onmouseout="toggleDropdown()" >Note
                 <i class="fa fa-caret-down"></i>
@@ -98,60 +140,95 @@
                 </div>
             </div> 
             <a style="float: right;" href="https://jung217.github.io/wp110b/project/signin.html"><img style="width: 25px;" src="https://www.ngc.org.tw/images/all/user.png"/></a>
-          </div>
-         <div style=" border-radius: 0px 0px 30px 30px; height: 300px; background-size:cover; background-position: center;background-image: url(https://live.staticflickr.com/65535/52054157046_a1701c3386_b.jpg);">
-         </br>
-             <h1 id="home" class="hh1" style="font-size: 50px;">簡志融的個人首頁</h1>
-         </div>
-         <hr/>
-         <div>
-            <img style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="200">
-        </br>
-            <b style="font-size: 45px;">簡志融</b>
-            <h3>2003.02.17 水瓶座-男性</h3>
-            <h3>s111010501@student.nqu.edu.tw</h3>
+            <a style="font-size: 25px;" href="#about">About</a>
+        </div>
+        <div style=" border-radius: 0px 0px 30px 30px; height: 300px; background-size:cover; background-position: center;background-image: url(https://live.staticflickr.com/65535/52054157046_a1701c3386_b.jpg);">
+            </br>
+            <h1 id="home" class="hh1" style="font-size: 50px;">簡志融的個人首頁</h1>
+        </div>
         <hr/>
-             <table style="width:100%;">
-                 <tr>
-                    <td><b style="font-size: 35px;">興趣</b></td>
-                    <td><b style="font-size: 35px;">程式語言</b></td>
-                    <td><b style="font-size: 35px;">學歷</b></td>
-                 </tr>
-                 <tr>
-                    <td><b>攝影</b></td>
-                    <td><b>C</b></td>
-                    <td><b>萬里國小</b></td>
-                 </tr>
-                 <tr>
-                    <td><b>陶藝</b></td>
-                    <td><b>C#</b></td>
-                    <td><b>武崙國中</b></td>
-                </tr>  
-                <tr>
-                    <td><b>旅行</b></td>
-                    <td><b>Css</b></td>
-                    <td><b>南湖高中</b></td>
-                </tr>
-                <tr>
-                    <td><b>烹飪</b></td>
-                    <td><b>Html</b></td>
-                    <td><b>金門大學</b></td>
-                </tr>
-             </table>   
-         </div> 
+        <div>
+            <div >
+                </br>
+                <img onmouseover="mofn(this)" onmouseout="moofn(this)" id="sp" style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="200">
+                </br>
+                <p><b style="font-size: 45px;">簡志融</b></p>
+                <p><h3>2003.02.17 水瓶座-男性</h3></p>
+                <p><h3>s111010501@student.nqu.edu.tw</h3></p>
+                </br>
+            </div>
+            <hr/>
+            <div>
+                </br>
+                <table style="width:100%;" >
+                    <tr>
+                        <td><b style="font-size: 35px;">興趣</b></td>
+                        <td><b style="font-size: 35px;">程式語言</b></td>
+                        <td><b style="font-size: 35px;">學歷</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>攝影</b></td>
+                        <td><b>C</b></td>
+                        <td><b>萬里國小</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>陶藝</b></td>
+                        <td><b>C#</b></td>
+                        <td><b>武崙國中</b></td>
+                    </tr>  
+                    <tr>
+                        <td><b>旅行</b></td>
+                        <td><b>Css</b></td>
+                        <td><b>南湖高中</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>烹飪</b></td>
+                        <td><b>Html</b></td>
+                        <td><b>金門大學</b></td>
+                    </tr>
+                    </table>
+                </br>
+            </div>                  
+        </div>      
+        <hr/>
         </br>
-         <div style="text-align: center;">
-            <b style="color: white;">外部連結 : </b>
-            <a style="color: white;" href="https://www.facebook.com/WLDGSBKT/">Facebook</a>
-            <a style="color: white;" href="https://www.flickr.com/photos/cjc217">Flickr</a>
-            <a style="color: white;" href="https://www.instagram.com/chih_jung_chien/">instagram</a>
-         </div>
-         <script>
+        <h1 id="Photos">Photos</h1>
+        <div class="flex f1"><img style="width: 475px;" src="https://live.staticflickr.com/65535/52037490058_1545034ad1_h.jpg"/></div>
+        <div class="flex f2"><img style="width: 475px;" src="https://live.staticflickr.com/65535/52037604989_6eae273f2b_h.jpg"/></div>
+        <div class="flex f3"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51990654060_3aa3a73e00_h.jpg"/></div>
+        <div class="flex f4"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51990653580_39bcf8a683_h.jpg"/></div>
+        <div class="flex f5"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51984346216_0b05e68340_b.jpg"/></div>
+        <div class="flex f6"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51981534595_2aa415654a_h.jpg"/></div>
+        <div class="flex f7"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51964091020_3cb095a882_h.jpg"/></div>
+        <div class="flex f8"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51959142777_17591233d9_h.jpg"/></div>
+        <div class="flex f9"><img style="width: 475px;" src="https://live.staticflickr.com/65535/51932021481_7d3b1c6719_h.jpg"/></div>
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <div id="about" style="text-align: center;">
+            <h1>About</h1>
+            <p>電話 : 0909160217</p>
+            <p>Email : alex24922665@gmail.com</p>
+            <p>地址 : 金門縣金寧鄉大學路一號</p>
+            <a href="https://www.instagram.com/chih_jung_chien/"><img style="width:70px;" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"/></a>
+            <a href="https://www.facebook.com/WLDGSBKT/"><img style="width:100px;" src="https://ic-hit.cnu.edu.tw/USER/Userfile/file/ff220108101723877134_l.png?t=1641608244836"/></a>
+            <a href="https://www.flickr.com/photos/cjc217"><img style="width:80px;" src="https://www.freeiconspng.com/uploads/flickr-icon-0.png"  /></a>
+            <a href="https://github.com/Jung217/wp110b?organization=Jung217&organization=Jung217"><img style="width:70px;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></a>
+        </div>
+        <script>
             function toggleDropdown() {
-                document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            function mofn(img){
+                img.src = "https://live.staticflickr.com/65535/52146016568_dc48ea6d9e_c.jpg";
+            }
+
+            function moofn(img){
+                img.src = "https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg";
             }
         </script>
     </body>
   </head>
 </html>
-  
